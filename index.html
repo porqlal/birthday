@@ -3,76 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>New Project Creator</title>
-  <style>
-    body {
-      background: #1e1b2f;
-      color: #e7d9ff;
-      font-family: 'Georgia', serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      padding: 2rem;
-    }
-    .container {
-      background: rgba(35, 29, 54, 0.8);
-      padding: 2rem;
-      border-radius: 1.5rem;
-      max-width: 400px;
-      text-align: center;
-      box-shadow: 0 0 20px #4c2c91;
-    }
-    button {
-      background: #a986ff;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 1rem;
-      cursor: pointer;
-      font-family: 'Georgia', serif;
-      font-size: 1.1rem;
-    }
-    button:hover {
-      background: #c1a3ff;
-    }
-    input[type="text"] {
-      margin-top: 1.5rem;
-      padding: 0.5rem 1rem;
-      width: 90%;
-      font-size: 1rem;
-      border-radius: 0.75rem;
-      border: none;
-      outline: none;
-      box-shadow: 0 0 10px #8b72d9;
-      background: #2e2a50;
-      color: #e7d9ff;
-      font-family: 'Georgia', serif;
-    }
-  </style>
+  <title>Birthday Magic</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <button id="createProjectBtn">Create new project</button>
-    <div id="inputContainer"></div>
+    <h1>🕯 Happy Birthday, Bright Soul</h1>
+    <p class="intro">
+      Today, the world quietly celebrates the birth of someone who walks between light and logic—someone who could duel with Voldemort <em>and</em> outsmart a detective board.
+    </p>
+    <button id="affirmationBtn">Whisper an affirmation</button>
+    <p id="affirmationDisplay" class="affirmation"></p>
   </div>
-
-  <script>
-    const button = document.getElementById('createProjectBtn');
-    const inputContainer = document.getElementById('inputContainer');
-
-    button.addEventListener('click', () => {
-      // Check if input already exists
-      if (!document.getElementById('projectInput')) {
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.id = 'projectInput';
-        input.placeholder = 'Enter project name...';
-        inputContainer.appendChild(input);
-        input.focus();
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
